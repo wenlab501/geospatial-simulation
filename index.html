@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Canva Site via GitHub Pages</title>
+  <meta name="description" content="Embed a Canva website inside GitHub Pages via iframe.">
+  <style>
+    html, body { height: 100%; margin: 0; }
+    body { display: flex; }
+    iframe { width: 100%; height: 100%; border: 0; flex: 1; }
+    .fallback { position: absolute; inset: 0; display: grid; place-items: center; font-family: system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, Arial, 'Microsoft JhengHei', sans-serif; }
+    .fallback a { text-decoration: none; padding: 12px 20px; border: 1px solid #ccc; border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <!-- ✅ 將下面的 example URL 換成你的 Canva 網站網址（例如：https://abc.my.canva.site） -->
+  <iframe src="https://geogth501.my.canva.site/geospatial-simulation" allowfullscreen loading="eager" referrerpolicy="no-referrer-when-downgrade" title="Canva site"></iframe>
+
+  <!-- 當瀏覽器不支援 iframe 或遭到封鎖時的後備連結 -->
+  <div class="fallback">
+    <a href="https://geogth501.my.canva.site/geospatial-simulation" rel="noopener">開啟網站（若未自動顯示）</a>
+  </div>
+</body>
+</html>
