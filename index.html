@@ -3,23 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Canva Site via GitHub Pages</title>
-  <meta name="description" content="Embed a Canva website inside GitHub Pages via iframe.">
+  <title>Redirecting…</title>
+  <!-- ✅ 把下面的 URL 換成你的 Canva 網站 -->
+  <meta http-equiv="refresh" content="0; url=https://geogth501.my.canva.site/geospatial-simulation">
+  <link rel="canonical" href="https://geogth501.my.canva.site/geospatial-simulation">
   <style>
-    html, body { height: 100%; margin: 0; }
-    body { display: flex; }
-    iframe { width: 100%; height: 100%; border: 0; flex: 1; }
-    .fallback { position: absolute; inset: 0; display: grid; place-items: center; font-family: system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, Arial, 'Microsoft JhengHei', sans-serif; }
-    .fallback a { text-decoration: none; padding: 12px 20px; border: 1px solid #ccc; border-radius: 8px; }
+    html, body { height: 100%; margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, Arial, 'Microsoft JhengHei', sans-serif; }
+    .wrap { display: grid; place-items: center; height: 100%; }
+    a { padding: 12px 18px; border-radius: 10px; border: 1px solid #bbb; text-decoration: none; }
   </style>
+  <script>
+    // JS fallback redirect (更快且相容)
+    window.location.replace("https://geogth501.my.canva.site/geospatial-simulation");
+  </script>
 </head>
 <body>
-  <!-- ✅ 將下面的 example URL 換成你的 Canva 網站網址（例如：https://abc.my.canva.site） -->
-  <iframe src="https://geogth501.my.canva.site/geospatial-simulation" allowfullscreen loading="eager" referrerpolicy="no-referrer-when-downgrade" title="Canva site"></iframe>
-
-  <!-- 當瀏覽器不支援 iframe 或遭到封鎖時的後備連結 -->
-  <div class="fallback">
-    <a href="https://geogth501.my.canva.site/geospatial-simulation" rel="noopener">開啟網站（若未自動顯示）</a>
+  <div class="wrap">
+    <p>正在前往你的網站… 若未自動跳轉，請<a href="https://geogth501.my.canva.site/geospatial-simulation" rel="noopener">點此開啟</a>。</p>
   </div>
 </body>
 </html>
